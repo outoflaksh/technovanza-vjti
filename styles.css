@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  background: #191523;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+.gradient-text {
+  background: #6c2dbb;
+  background: -webkit-linear-gradient(to right, #6c2dbb 0%, #ce51b3 100%);
+  background: -moz-linear-gradient(to right, #6c2dbb 0%, #ce51b3 100%);
+  background: linear-gradient(to right, #6c2dbb 0%, #ce51b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  transition-delay: 0.25s;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.slide-up {
+  transform: translateY(50%);
+  transition: transform 0.4s ease-in;
+}
+
+.slide-up.set {
+  transform: translateY(0);
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fdf6ff;
+}
+
+.nav-list,
+.nav-brand {
+  padding: 20px;
+  font-weight: 600;
+}
+
+.nav-brand {
+  font-size: 1.1rem;
+}
+
+.nav-item {
+  list-style: none;
+  display: inline;
+  font-size: 0.85rem;
+  padding: 8px 15px;
+}
+
+.buy-btn {
+  cursor: pointer;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #1038a7 0%, #0d809c 100%);
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-container {
+  text-align: center;
+  background: #34283c;
+}
+
+.hero-text {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: -0.3rem;
+  color: #fdf6ff;
+}
+
+.intro-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fdf6ff;
+  padding-top: 50px;
+}
+
+.intro-text span {
+  font-weight: 900;
+  font-size: 3.8rem;
+  letter-spacing: -0.2rem;
+}
