@@ -1,5 +1,6 @@
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-up");
+const zoomout = document.querySelector(".cta");
 
 const fadeOptions = {
   threshold: 0.75,
@@ -27,6 +28,18 @@ const slideObserver = new IntersectionObserver(function (entries, observer) {
   });
 }, slideOptions);
 
+const zoomObserver = new IntersectionObserver(
+  function (entries, observer) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+      entry.target.classList.add("appear");
+    });
+  },
+  { threshold: 0.4 }
+);
+
 faders.forEach((text) => {
   fadeObserver.observe(text);
 });
@@ -34,3 +47,5 @@ faders.forEach((text) => {
 sliders.forEach((text) => {
   slideObserver.observe(text);
 });
+
+zoomObserver.observe(zoomout);

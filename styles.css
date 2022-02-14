@@ -85,6 +85,7 @@ a {
 .section {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 .hero-container {
@@ -110,11 +111,54 @@ a {
   font-size: 2rem;
   font-weight: 700;
   color: #fdf6ff;
-  padding-top: 50px;
+  padding-top: 30px;
+}
+
+.cta-text {
+  font-size: 4.6rem;
+  font-weight: 900;
+  color: #8ed4c2;
+  z-index: 4;
+  letter-spacing: -0.2rem;
+  opacity: 0;
+  transform: translateX(20%);
+  transition: 0.25s ease-in-out;
+  transition-delay: 2s;
+
+  position: absolute;
+  right: 15%;
 }
 
 .intro-text span {
   font-weight: 900;
-  font-size: 3.8rem;
+  font-size: 3.6rem;
   letter-spacing: -0.2rem;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.zoom-out {
+  height: 250%;
+  width: auto;
+  transform: rotate(90deg);
+  transition: 1s ease-in-out;
+  transition-delay: 0.8s;
+  z-index: 1;
+}
+
+.cta.appear .zoom-out {
+  transform: rotate(0);
+  height: 75%;
+  width: auto;
+  margin-right: 45%;
+}
+
+.cta.appear .cta-text {
+  opacity: 1;
+  transform: translateX(0);
 }
