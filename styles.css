@@ -210,8 +210,19 @@ li {
     font-size: 10px;
   }
 
+  main {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+  }
+
+  .nav-brand,
+  .nav-item {
+    font-size: 1.4rem;
+  }
+
   .section {
     padding: 0px 10px;
+    scroll-snap-align: start;
   }
 
   .slide-up {
