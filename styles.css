@@ -35,10 +35,14 @@ li {
 }
 
 .gradient-text-2 {
-  background: #00c9ff;
-  background: -webkit-linear-gradient(to right, #00c9ff 0%, #92fe9d 100%);
-  background: -moz-linear-gradient(to right, #00c9ff 0%, #92fe9d 100%);
-  background: linear-gradient(to right, #00c9ff 0%, #92fe9d 100%);
+  background: #9cecfb;
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #9cecfb 0%,
+    #65c7f7 100%
+  );
+  background: -moz-linear-gradient(to bottom right, #9cecfb 0%, #65c7f7 100%);
+  background: linear-gradient(to bottom right, #9cecfb 0%, #65c7f7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -152,9 +156,10 @@ li {
 
 .feat-item {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #fdf6ff;
   margin-top: 15px;
+  letter-spacing: -0.1rem;
 }
 
 .cta-text {
