@@ -300,4 +300,15 @@ li {
     right: 10%;
     width: 40%;
   }
+
+  .rotate {
+    transform: rotate(0);
+    margin-left: 40%;
+  }
+
+  .cam-text {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 3rem;
+  }
 }
