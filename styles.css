@@ -83,6 +83,16 @@ li {
   opacity: 1;
 }
 
+.rotate {
+  transform: rotate(-90deg) scale(1.35);
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.rotate.appear {
+  transform: rotate(0);
+}
+
 .navbar {
   width: 100%;
   position: fixed;
@@ -144,13 +154,43 @@ li {
   justify-content: center;
 }
 
-.hand {
+.buy-now {
   background: url(./assets/img/handheld.png);
   background-position: center;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.buy-now .buy-btn {
+  padding: 10px 20px;
+  color: #fdf6ff;
+  margin-top: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.camera {
+  display: flex;
+  align-items: center;
+}
+
+.cam-text,
+.camera img {
+  flex: 1;
+}
+
+.cam-text {
+  text-align: center;
+  color: #8ed4c2;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.camera img {
+  margin-top: 15%;
 }
 
 .hero-text {
@@ -175,8 +215,8 @@ li {
   letter-spacing: -0.1rem;
 }
 
-.hand-text {
-  font-size: 2.6rem;
+.buy-text {
+  font-size: 2.2rem;
   font-weight: 800;
   color: #45edcc;
   text-align: center;
@@ -232,7 +272,8 @@ li {
 
   main {
     scroll-snap-type: y mandatory;
-    overflow: auto;
+    overflow-y: auto;
+    height: 100vh;
   }
 
   .nav-brand,
