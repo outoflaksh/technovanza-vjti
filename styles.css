@@ -177,6 +177,24 @@ li {
   align-items: center;
 }
 
+.colors {
+  height: 100%;
+  width: 100%;
+  background: url(./assets/img/colors.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colors-text {
+  margin: 0 2% 5% 0;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -0.2rem;
+}
+
 .cam-text,
 .camera img {
   flex: 1;
