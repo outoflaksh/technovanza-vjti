@@ -47,6 +47,17 @@ li {
   -webkit-text-fill-color: transparent;
 }
 
+.fl-center,
+.fl-center-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fl-center-col {
+  flex-direction: column;
+}
+
 .fade-in,
 .fade-in-right,
 .fade-in-left {
@@ -136,32 +147,15 @@ li {
   background: #34283c;
 }
 
-.hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+.hero-container,
 .intro-container {
   text-align: center;
-}
-
-.features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .buy-now {
   background: url(./assets/img/handheld.png);
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .buy-now .buy-btn {
@@ -172,20 +166,12 @@ li {
   font-weight: 600;
 }
 
-.camera {
-  display: flex;
-  align-items: center;
-}
-
 .colors {
   height: 100%;
   width: 100%;
   background: url(./assets/img/colors.png);
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .colors-text {
@@ -257,9 +243,6 @@ li {
 }
 
 .cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 
@@ -280,6 +263,65 @@ li {
   height: 75%;
   width: auto;
   margin-right: 45%;
+}
+
+.buy-page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.buy-page .image-container,
+.buy-page .info {
+  width: 50%;
+}
+
+.buy-page .info {
+  color: #d3f8ff;
+}
+
+.info h1 {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #fdf6ff;
+}
+
+.info h2 {
+  font-weight: 500;
+}
+
+.info .buy-btn {
+  border-style: none;
+  padding: 10px 20px;
+  color: inherit;
+  font: inherit;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+form {
+  width: 45%;
+}
+
+form h1 {
+  color: #45edcc;
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  font: inherit;
+}
+
+input[type="submit"] {
+  background-color: #0d809c;
+  color: white;
+  font-weight: 800;
+  border-style: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 850px) {
