@@ -308,11 +308,14 @@ li {
 
 form {
   width: 45%;
+  padding: 25px;
+  border: 2px dashed #8ed4c2;
+  border-radius: 25px;
 }
 
 form h1 {
   color: #45edcc;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.6rem;
 }
 
@@ -378,5 +381,9 @@ input[type="submit"] {
     text-align: left;
     margin-left: 10%;
     font-size: 3rem;
+  }
+
+  form {
+    width: 90%;
   }
 }
