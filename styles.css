@@ -275,6 +275,14 @@ li {
   width: 50%;
 }
 
+.buy-page img {
+  transition: 0.2s ease;
+}
+
+.buy-page img:hover {
+  transform: scale(1.1);
+}
+
 .buy-page .info {
   color: #d3f8ff;
 }
